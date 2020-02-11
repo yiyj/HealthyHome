@@ -30,6 +30,8 @@
 		18F0A7EA23C60C9D0009B8A3 /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0A7E923C60C9D0009B8A3 /* NavigationController.swift */; };
 		18F0A7EC23C616320009B8A3 /* GuideAdsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0A7EB23C616320009B8A3 /* GuideAdsVC.swift */; };
 		18F0A7EE23C61C220009B8A3 /* ChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F0A7ED23C61C220009B8A3 /* ChildViewController.swift */; };
+		18FE06B523F2F54A002393C2 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE06B423F2F54A002393C2 /* Common.swift */; };
+		18FE06B823F2F8FB002393C2 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FE06B723F2F8FB002393C2 /* ToastView.swift */; };
 		4AD57A58D81CE3E9A7B1F299 /* Pods_HealthyHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9630A964F2196E2C1EB87818 /* Pods_HealthyHome.framework */; };
 		A283232449DF998F65DBAC6D /* Pods_HealthyHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 15ACFAE1F9989F7619B2FCE3 /* Pods_HealthyHomeTests.framework */; };
 		A5054B387AB611E1186E4CFF /* Pods_HealthyHome_HealthyHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDBE754D0E26227F6FB94D50 /* Pods_HealthyHome_HealthyHomeUITests.framework */; };
@@ -85,6 +87,8 @@
 		18F0A7E923C60C9D0009B8A3 /* NavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		18F0A7EB23C616320009B8A3 /* GuideAdsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideAdsVC.swift; sourceTree = "<group>"; };
 		18F0A7ED23C61C220009B8A3 /* ChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChildViewController.swift; sourceTree = "<group>"; };
+		18FE06B423F2F54A002393C2 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		18FE06B723F2F8FB002393C2 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		2012B1819F139A63C38F4166 /* Pods-HealthyHome-HealthyHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHome-HealthyHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-HealthyHome-HealthyHomeUITests/Pods-HealthyHome-HealthyHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		3F6ED83BBA2C0475C1DE93D6 /* Pods-HealthyHome-HealthyHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHome-HealthyHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-HealthyHome-HealthyHomeUITests/Pods-HealthyHome-HealthyHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		52D40BE87A3E1521522A1FEA /* Pods-HealthyHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HealthyHome.debug.xcconfig"; path = "Target Support Files/Pods-HealthyHome/Pods-HealthyHome.debug.xcconfig"; sourceTree = "<group>"; };
@@ -133,6 +137,7 @@
 		184B10E123C4CB5F00047174 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				18FE06B423F2F54A002393C2 /* Common.swift */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -140,6 +145,8 @@
 		184B10E223C4CB6F00047174 /* Libs */ = {
 			isa = PBXGroup;
 			children = (
+				18FE06B623F2F8ED002393C2 /* HUD */,
+				1850189523F256E500F9B347 /* imageHelper */,
 			);
 			path = Libs;
 			sourceTree = "<group>";
@@ -161,14 +168,6 @@
 				18F0A7EB23C616320009B8A3 /* GuideAdsVC.swift */,
 			);
 			path = Guide;
-			sourceTree = "<group>";
-		};
-		1850189423F2563400F9B347 /* Libs */ = {
-			isa = PBXGroup;
-			children = (
-				1850189523F256E500F9B347 /* imageHelper */,
-			);
-			path = Libs;
 			sourceTree = "<group>";
 		};
 		1850189523F256E500F9B347 /* imageHelper */ = {
@@ -243,8 +242,6 @@
 				18496A9E23C5F43100F89CC7 /* Macors */,
 				184B10E323C4CB9800047174 /* Extension */,
 				188194BF23C37EC300D5D140 /* Root */,
-				189F2E8623F109A300E3CBB8 /* Tool */,
-				1850189423F2563400F9B347 /* Libs */,
 			);
 			path = Public;
 			sourceTree = "<group>";
@@ -313,11 +310,12 @@
 			path = Me;
 			sourceTree = "<group>";
 		};
-		189F2E8623F109A300E3CBB8 /* Tool */ = {
+		18FE06B623F2F8ED002393C2 /* HUD */ = {
 			isa = PBXGroup;
 			children = (
+				18FE06B723F2F8FB002393C2 /* ToastView.swift */,
 			);
-			path = Tool;
+			path = HUD;
 			sourceTree = "<group>";
 		};
 		49320F6AB13225E7AA188811 /* Frameworks */ = {
@@ -586,6 +584,7 @@
 				1850189923F256FB00F9B347 /* ImageVIewExtension.swift in Sources */,
 				184B10E623C4CBCE00047174 /* GuideViewController.swift in Sources */,
 				188194C623C383AC00D5D140 /* HomeVC.swift in Sources */,
+				18FE06B823F2F8FB002393C2 /* ToastView.swift in Sources */,
 				18496AA423C5FCE800F89CC7 /* UIColor+Extension.swift in Sources */,
 				18496AA123C5F47B00F89CC7 /* PrefixPch.swift in Sources */,
 				188194CC23C384AE00D5D140 /* FriendsVC.swift in Sources */,
@@ -597,6 +596,7 @@
 				18F0A7EC23C616320009B8A3 /* GuideAdsVC.swift in Sources */,
 				1850189323F2439A00F9B347 /* UIIamge+Extension.swift in Sources */,
 				18F0A7EE23C61C220009B8A3 /* ChildViewController.swift in Sources */,
+				18FE06B523F2F54A002393C2 /* Common.swift in Sources */,
 				1881948F23C3789700D5D140 /* AppDelegate.swift in Sources */,
 				188194C923C3843400D5D140 /* HealthyVC.swift in Sources */,
 				18496A9D23C5F31300F89CC7 /* APPDelegate+Categories.swift in Sources */,

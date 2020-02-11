@@ -15,11 +15,17 @@ class HomeVC: UIViewController {
         super.viewDidLoad()
         
         let imageView = UIImageView(frame: self.view.bounds)
-    imageView.imageFromURL("https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3105600238,693167464&fm=26&gp=0.jpg", placeholder: UIImage(named: "tabbar_database")!, fadeIn: true, shouldCacheImage: true) { (UIIamge) in
+        imageView.contentMode = .scaleAspectFit
+    imageView.imageFromURL("https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3337020166,4184020880&fm=26&gp=0.jpg", placeholder: UIImage(named: "tabbar_database")!, fadeIn: true, shouldCacheImage: true) { (UIIamge) in
             
         }
         self.view.addSubview(imageView)
         
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        let childVC = ChildViewController()
+        self.navigationController?.pushViewController(childVC, animated: true)
     }
   
 //    lazy var tableView: UITableView = {
