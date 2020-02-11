@@ -1,0 +1,20 @@
+PODS:
+  - AppVersionMonitor (1.4.0)
+  - RAMAnimatedTabBarController (5.1.0)
+
+DEPENDENCIES:
+  - AppVersionMonitor
+  - RAMAnimatedTabBarController
+
+SPEC REPOS:
+  trunk:
+    - AppVersionMonitor
+    - RAMAnimatedTabBarController
+
+SPEC CHECKSUMS:
+  AppVersionMonitor: 0227cbd70c78b787190afd5e959c0280718bac8e
+  RAMAnimatedTabBarController: b5c821298071fded801532216ad8a24394f89859
+
+PODFILE CHECKSUM: 2c977ea4823c542bb59ae3d6791e508a8d83cbed
+
+COCOAPODS: 1.9.0.beta.3
