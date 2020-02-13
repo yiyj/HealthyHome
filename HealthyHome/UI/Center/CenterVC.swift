@@ -1,20 +1,19 @@
 //
-//  FriendsVC.swift
+//  CenterVC.swift
 //  HealthyHome
 //
-//  Created by apple on 2020/1/6.
+//  Created by apple on 2020/2/12.
 //  Copyright © 2020 apple. All rights reserved.
 //
 
 import UIKit
 
-class FriendsVC: UIViewController {
+class CenterVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
-        
+        // Do any additional setup after loading the view.
     }
     
 

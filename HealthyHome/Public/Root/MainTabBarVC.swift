@@ -38,7 +38,7 @@ class MainTabBarVC:RAMAnimatedTabBarController, UITabBarControllerDelegate {
         //首页
         addChildVC(childVC: HomeVC(), title: "首页", imageNormal: "TabBarNormal_Home", imageSelect: "TabBarSelect_Home")
         addChildVC(childVC: HealthyVC(), title: "健康", imageNormal: "TabBarNormal_Healthy", imageSelect: "TabBarSelect_Healthy")
-        addChildVC(childVC: ViewController(), title: "发布", imageName: "tabbar_database")
+        addChildVC(childVC: CenterVC(), title: "发布", imageName: "tabbar_database")
         addChildVC(childVC: FriendsVC(), title: "朋友圈", imageNormal: "TabBarNormal_Friends", imageSelect: "TabBarSelect_Friends")
         addChildVC(childVC: MeVC(), title: "我的", imageNormal: "TabBarNormal_Me", imageSelect: "TabBarSelect_Me")
     }
